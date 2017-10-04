@@ -46,6 +46,16 @@ int AddNode
         }
         printf("%d  ", temp->a);
 
+int DeleteNode
+struct node *temp;
+
+    while (*head != NULL)
+    {
+        temp = *head;
+        *head = (*head)->next;
+        free(temp);
+    }
+
 int main()
     {
         int flag ;
