@@ -71,6 +71,19 @@ int DisplayList
     r=r->next;
     }
 
+int DeleteList
+int num;
+     if(head=NULL)
+           printf("List is Empty\n");
+     else
+           printf("Enter the number to delete : ");
+           scanf("%d",&num);
+     if(delete(num))
+           printf("%d deleted successfully\n",num);
+     else
+           printf("%d not found in the list\n",num);
+
+
 int main()
     {
         int flag ;
