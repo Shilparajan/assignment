@@ -38,6 +38,26 @@ int AddNode
     count++;
    }
 
+int DisplayForward
+{
+int temp2
+temp2 = head;
+
+    if (temp2 == NULL)
+    {
+        printf("List empty to display \n");
+        return;
+    }
+    printf("\n Linked list elements from begining : ");
+
+    while (temp2->right != NULL)
+    {
+        printf(" %d ", temp2->n);
+        temp2 = temp2->right;
+    }
+    printf(" %d ", temp2->n);
+}
+
 int main()
     {
         int flag ;
