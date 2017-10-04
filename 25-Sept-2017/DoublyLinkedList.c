@@ -58,6 +58,18 @@ temp2 = head;
     printf(" %d ", temp2->n);
 }
 
+int DisplayReverse
+{
+  int temp2;
+    if (temp2 != NULL)
+    {
+        i = temp2->n;
+        temp2 = temp2->right;
+        DisplayReverse(i);
+        printf(" %d ", i);
+    }
+}
+
 int main()
     {
         int flag ;
