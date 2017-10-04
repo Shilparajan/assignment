@@ -25,6 +25,19 @@ int count=0;
     count++;
 }
 
+int AddNode
+   {
+    int data;
+    int count;
+    temp =(struct node *)malloc(1*sizeof(struct node));
+    temp->left = NULL;
+    temp->right = NULL;
+    printf("\n Enter value to node : ");
+    scanf("%d", &data);
+    temp->n = data;
+    count++;
+   }
+
 int main()
     {
         int flag ;
