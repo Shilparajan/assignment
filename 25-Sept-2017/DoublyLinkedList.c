@@ -81,6 +81,33 @@ struct node *temp;
         free(temp);
     }
 
+int SearchList
+
+{
+    int data, count = 0;
+    int temp2 = head;
+
+    if (temp2 == NULL)
+    {
+        printf("\n Error : List empty to search for data");
+        return;
+    }
+    printf("\n Enter value to search : ");
+    scanf("%d", &data);
+    while (temp2 != NULL)
+    {
+        if (temp2->n == data)
+        {
+            printf("\n Data found in %d position",count + 1);
+            return;
+        }
+        else
+             temp2 = temp2->right;
+            count++;
+    }
+    printf("\n Error : %d not found in list", data);
+}
+
 int main()
     {
         int flag ;
