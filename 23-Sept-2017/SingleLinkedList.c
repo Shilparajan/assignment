@@ -84,6 +84,22 @@ int num;
            printf("%d not found in the list\n",num);
 
 
+
+int SearchList
+while (head != NULL)
+    {
+        if (head->a == key)
+        {
+            printf("key found\n");
+            return;
+        }
+        head = head->next;
+    }
+    printf("Key not found\n");
+}
+
+
+
 int main()
     {
         int flag ;
