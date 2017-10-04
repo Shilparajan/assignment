@@ -26,6 +26,26 @@ int CreateList
             first = temp = head;
         }
 
+int AddNode
+    int i;
+    struct node *temp;
+
+    for (i = 0; i < num; i++)
+    {
+        temp = (struct node *)malloc(sizeof(struct node));
+        temp->a = rand() % num;
+        if (*head == NULL)
+        {
+            *head = temp;
+            temp->next = NULL;
+        }
+        else
+        {
+            temp->next = *head;
+            *head = temp;
+        }
+        printf("%d  ", temp->a);
+
 int main()
     {
         int flag ;
