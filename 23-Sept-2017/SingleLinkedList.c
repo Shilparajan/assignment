@@ -56,6 +56,21 @@ struct node *temp;
         free(temp);
     }
 
+
+int DisplayList
+    printf("The elements in list is:\n");
+    int *r;
+    r=head;
+    if(r==NULL)
+    {
+    return;
+    }
+    while(r!=NULL)
+    {
+    printf("%d ",r->data);
+    r=r->next;
+    }
+
 int main()
     {
         int flag ;
