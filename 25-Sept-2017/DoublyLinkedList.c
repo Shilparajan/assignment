@@ -70,6 +70,17 @@ int DisplayReverse
     }
 }
 
+
+int DeteleList
+struct node *temp;
+
+    while (*head != NULL)
+    {
+        temp = *head;
+        *head = (*head)->right;
+        free(temp);
+    }
+
 int main()
     {
         int flag ;
